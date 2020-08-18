@@ -5,19 +5,22 @@ export interface LogoProps {
     bright?: boolean,
 }
  
-const Logo: React.SFC<LogoProps> = () => {
+const Logo: React.SFC<LogoProps> = ({bright = false}) => {
     const urlToLogo: {[key: string] : string} = {
         regular: "/img/logo.png",
         bright: "/img/logo_bright.png",
     }
     return ( 
         <>
-        <Button 
-          disableRipple
-          disableElevation
-        >
-            <img src={urlToLogo.regular} alt=""/>
-        </Button>
+            <Button 
+              disableRipple
+              disableElevation
+            >
+                { bright
+                ? <img src={urlToLogo.bright} alt=""/>
+                : <img src={urlToLogo.regular} alt=""/>}
+                {console.log(bright)}
+            </Button>
         </>
      );
 }
