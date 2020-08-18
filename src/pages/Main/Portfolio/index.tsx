@@ -1,32 +1,25 @@
 import React from 'react'
-import { Typography, Grid } from "@material-ui/core"
+import { Typography, Grid, Link, Container } from "@material-ui/core"
 import { useStyles } from "./style";
 
-export interface OpeningBigTextProps {
-    
-}
+export interface PortfolioProps {}
  
-const OpeningBigText: React.SFC<OpeningBigTextProps> = () => {
+const Portfolio: React.SFC<PortfolioProps> = () => {
     const classes = useStyles();
     return (
-            <Grid className={classes.openingBigTextContainer} container justify="center">
-                <div className={classes.textContainer}>
-                    <Typography
-                    variant="h1"
-                    >
-                        <span>
-                            <img src="/img/M_letter.png" alt=""/>
-                        </span>
-                        uradasiloff
-                    </Typography>
-                    <Typography
-                    variant="h2"
-                    >
-                        Front-end Developer
-                    </Typography>
-                </div>
-            </Grid>
+            <Container>
+                <Grid container className={classes.container} justify="center">
+                    <Grid item>
+                        <Typography variant="h1">
+                            Recent Works
+                        </Typography>
+                        <Typography>
+                            Here are some projects of mine. Visit my <Link href="https://github.com/savageblossom">github</Link> profile for more. 
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Container>
     );
 }
  
-export default OpeningBigText;
+export default Portfolio;

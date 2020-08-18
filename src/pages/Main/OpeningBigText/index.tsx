@@ -1,25 +1,28 @@
 import React from 'react'
-import { Typography, Grid, Link } from "@material-ui/core"
+import { Typography, Grid } from "@material-ui/core"
 import { useStyles } from "./style";
 
-export interface OpeningBigTextProps {
-    
-}
+export interface OpeningBigTextProps {}
  
 const OpeningBigText: React.SFC<OpeningBigTextProps> = () => {
     const classes = useStyles();
     return (
-            <Grid container>
-                <Grid item>
-                    <Typography variant="h1">
-                        Recent Works
+            <Grid className={classes.openingBigTextContainer} container justify="center">
+                <div className={classes.textContainer}>
+                    <Typography
+                    variant="h1"
+                    >
+                        <span>
+                            <img src="/img/M_letter.png" alt=""/>
+                        </span>
+                        uradasiloff
                     </Typography>
-                    <Typography>
-                        Here are some projects of mine. Visit my 
-                        <Link href="https://github.com/savageblossom">github</Link> 
-                        profile for more. 
+                    <Typography
+                    variant="h2"
+                    >
+                        Front-end Developer
                     </Typography>
-                </Grid>
+                </div>
             </Grid>
     );
 }
