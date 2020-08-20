@@ -27,11 +27,11 @@ const overrides: Overrides = {
 
 const breakpoints: BreakpointOverrides = {
     values: {
-        xs: false,
-        sm: false,
-        md: false,
-        lg: false,
-        xl: false,
+            xs: false,
+            sm: false,
+            md: false,
+            lg: false,
+            xl: false,
     }
 }
 

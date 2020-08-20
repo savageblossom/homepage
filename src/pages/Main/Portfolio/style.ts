@@ -5,7 +5,20 @@ import { fonts } from '../../../helpers/fonts';
 export const useStyles = makeStyles((theme: Theme) => {
     return {
         container: {
-            textAlign: "center"
+            paddingBottom: 50,
+            textAlign: "center",
+            "& h1": {
+                fontSize: 35,
+                fontFamily: fonts.GothamProBold,
+                marginBottom: 26,
+            },
+            "& p": {
+                fontSize: 18,
+                fontFamily: fonts.GothamProRegular,
+            }
+        },
+        blockDescription: {
+            marginBottom: 40
         }
     }
 })

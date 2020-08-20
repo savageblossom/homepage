@@ -11,8 +11,8 @@ const AboutAuthor: React.SFC<AboutAuthorProps> = () => {
         <Container>
             <Paper className={classes.skillCard}>
                 <Typography variant="h1">{info.title}</Typography>
-                <Typography>{info.description}</Typography>
-                <div className={classes.contentContainer}>
+                <Typography className={classes.descriptionBlock}>{info.description}</Typography>
+                <div>
                     <div className={classes.contentSection}>
                         <Typography variant="h2">Skills I have:</Typography>
                         <Typography>{info.lists.skills}</Typography>

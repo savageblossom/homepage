@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme: Theme) => {
             minHeight: 715,
             margin: "0 auto",
             position: "relative",
-            padding: `${200}px ${80}px ${50}px ${80}px`,
+            padding: `${200}px ${70}px ${50}px ${70}px`,
             background: `url(${pathToBackground}) no-repeat 50% 55px ${colours.cloudwhite}`,
             bottom: 200,
             border: "1px solid #ffe2cc",
@@ -36,16 +36,17 @@ export const useStyles = makeStyles((theme: Theme) => {
             },
         },
 
-        contentContainer: {
-// 
+        descriptionBlock: {
+            marginTop: 25,
         },
 
         contentSection: {
-            marginTop: 60,
+            marginTop: 65,
             "& h2": {
                 fontFamily: fonts.GothamProMedium,
                 color: colours.orange,
                 margin: 0,
+                marginBottom: 5,
                 fontSize: 18,
                 fontWeight: 400,
             },

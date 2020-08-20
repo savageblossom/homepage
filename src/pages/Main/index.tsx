@@ -4,6 +4,7 @@ import OpeningBigText from './OpeningBigText';
 import Greeting from './Greeting';
 import AboutAuthor from './AboutAuthor';
 import Portfolio from './Portfolio';
+import Footer from './Footer';
 
 export interface MainPageProps {
     
@@ -16,6 +17,7 @@ const MainPage: React.SFC<MainPageProps> = () => {
             <Greeting />
             <AboutAuthor />
             <Portfolio />
+            <Footer />
         </>
     );
 }
